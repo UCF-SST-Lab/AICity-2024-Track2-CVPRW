@@ -38,9 +38,7 @@ cd pdvc/ops
 sh make.sh
 ```
 
-## Training and Validation
-
-### Dense Video Captioning
+## Training Dense Video Captioning
 1. PDVC with learnt proposals
 ```
 # Training
@@ -51,17 +49,6 @@ python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID}
 # Evaluation
 eval_folder=anet_c3d_pdvc # specify the folder to be evaluated
 python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type queries --gpu_id ${GPU_ID}
-```
-2. PDVC with ground-truth proposals
-
-```
-# Training
-config_path=cfgs/anet_c3d_pdvc_gt.yml
-python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID}
-
-# Evaluation
-eval_folder=anet_c3d_pdvc_gt
-python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type gt_proposals --gpu_id ${GPU_ID}
 ```
 
 ## Performance
