@@ -43,7 +43,7 @@ sh make.sh
 ```
 # Training
 config_path=cfgs/bdd_veh_clip_pdvcl.yml
-python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID}
+python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID} --epoch=30
 # The script will evaluate the model for every epoch. The results and logs are saved in `./save`.
 
 # Evaluation
