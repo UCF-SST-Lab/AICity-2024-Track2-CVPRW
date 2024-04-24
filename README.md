@@ -1,6 +1,6 @@
-# PDVC
+# Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis
 
-Official implementation for End-to-End Dense Video Captioning with Parallel Decoding (ICCV 2021) 
+Official repductive code for Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis(CVPRW 2024) 
 
 
 **Table of Contents:**
