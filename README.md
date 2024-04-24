@@ -1,6 +1,6 @@
 # Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis
 
-Official repductive code for Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis(CVPRW 2024) 
+Official repductive code for Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis (CVPRW 2024) 
 
 
 **Table of Contents:**
