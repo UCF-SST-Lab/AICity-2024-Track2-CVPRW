@@ -40,21 +40,11 @@ sh make.sh
 
 ## Training and Validation
 
-### Download Video Features
-
-```bash
-cd data/anet/features
-bash download_anet_c3d.sh
-# bash download_anet_tsn.sh
-# bash download_i3d_vggish_features.sh
-# bash download_tsp_features.sh
-```
-
 ### Dense Video Captioning
 1. PDVC with learnt proposals
 ```
 # Training
-config_path=cfgs/anet_c3d_pdvc.yml
+config_path=cfgs/bdd_veh_clip_pdvcl.yml
 python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID}
 # The script will evaluate the model for every epoch. The results and logs are saved in `./save`.
 
@@ -68,30 +58,6 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type querie
 # Training
 config_path=cfgs/anet_c3d_pdvc_gt.yml
 python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID}
-
-# Evaluation
-eval_folder=anet_c3d_pdvc_gt
-python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type gt_proposals --gpu_id ${GPU_ID}
-```
-
-
-### Video Paragraph Captioning
-
-1. PDVC with learnt proposals
-```bash
-# Training
-config_path=cfgs/anet_c3d_pdvc.yml
-python train.py --cfg_path ${config_path} --criteria_for_best_ckpt pc --gpu_id ${GPU_ID} 
-
-# Evaluation
-eval_folder=anet_c3d_pdvc # specify the folder to be evaluated
-python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type queries --gpu_id ${GPU_ID}
-```
-2. PDVC with ground-truth proposals
-```
-# Training
-config_path=cfgs/anet_c3d_pdvc_gt.yml
-python train.py --cfg_path ${config_path} --criteria_for_best_ckpt pc --gpu_id ${GPU_ID}
 
 # Evaluation
 eval_folder=anet_c3d_pdvc_gt
