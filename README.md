@@ -39,7 +39,7 @@ sh make.sh
 ```
 
 ## Training Dense Video Captioning
-1. PDVC with learnt proposals
+
 ```
 # Training
 config_path=cfgs/bdd_veh_clip_pdvcl.yml
