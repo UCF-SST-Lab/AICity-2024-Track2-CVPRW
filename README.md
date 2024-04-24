@@ -4,8 +4,6 @@ This repository contains code to reproduce the results for our paper Enhancing T
 
 
 **Table of Contents:**
-* [Updates](#updates)
-* [Introduction](#introduction)
 * [Preparation](#preparation)
 * [Training and Validation](#training-and-validation)
   + [Download Video Features](#download-video-features)
@@ -19,11 +17,10 @@ This repository contains code to reproduce the results for our paper Enhancing T
 
 
 ## Preparation
-Environment: Linux,  GCC>=5.4, CUDA >= 9.2, Python>=3.7, PyTorch>=1.5.1
 
 1. Clone the repo
 ```bash
-git clone --recursive https://github.com/ttengwang/PDVC.git
+git clone --recursive https://github.com/UCF-SST-Lab/AICity2024CVPRW.git
 ```
 
 2. Create vitual environment by conda
@@ -40,22 +37,6 @@ pip install -r requirement.txt
 cd pdvc/ops
 sh make.sh
 ```
-
-## Running PDVC on Your Own Videos
-Download a pretrained model ([GoogleDrive](https://drive.google.com/drive/folders/1sX5wTk1hBgR_a5YUzpxFCrzwkZQXiIab?usp=sharing)) with [TSP](https://github.com/HumamAlwassel/TSP) features  and put it into `./save`. Then run:
-```bash
-video_folder=visualization/videos
-output_folder=visualization/output
-pdvc_model_path=save/anet_tsp_pdvc/model-best.pth
-output_language=en
-bash test_and_visualize.sh $video_folder $output_folder $pdvc_model_path $output_language
-```
-check the `$output_folder`, you will see a new video with embedded captions. 
-Note that we generate non-English captions by translating the English captions by GoogleTranslate. 
-To produce chinese captions, set `output_language=zh-cn`. 
-For other language support, find the abbreviation of your language at this [url](https://github.com/lushan88a/google_trans_new/blob/main/constant.py), and you also may need to download a font supporting your language and put it into `./visualization`.
-
-![demo.gif](visualization/xukun_en.gif)![demo.gif](visualization/xukun_cn.gif)
 
 ## Training and Validation
 
@@ -123,49 +104,30 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type gt_pro
 |  Model | Features | config_path |   Url   | Recall | Precision |    BLEU4   | METEOR2018 | METEOR2021 |  CIDEr | SODA_c |
 |  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |   ----  |  ----  |  ----  |  ----  | ---- |
 | PDVC_light   | C3D  | cfgs/anet_c3d_pdvcl.yml | [Google Drive](https://drive.google.com/drive/folders/1JKOJrm5QMAkso-VJnzGnksIVqNYt8BSI?usp=sharing)  |  55.30   |  58.42  | 1.55  |  7.13  |  7.66 | 24.80  |  5.23  |
-| PDVC   | C3D  | cfgs/anet_c3d_pdvc.yml |  [Google Drive](https://drive.google.com/drive/folders/1I77miVvThdMenmprgozfRsXDVoc-9TxY?usp=sharing)  |  55.20   |  57.36  | 1.82  |  7.48  |  8.09  | 28.16  |  5.47  |
-| PDVC_light   | TSN | cfgs/anet_tsn_pdvcl.yml | [Google Drive](https://drive.google.com/drive/folders/1hImJ7sXABzS-ycErruLFCE_pkWEHzFSV?usp=sharing)  |  55.34   |  57.97  | 1.66  |  7.41  |  7.97 | 27.23  |  5.51  |
-| PDVC   | TSN  | cfgs/anet_tsn_pdvc.yml | [Google Drive](https://drive.google.com/drive/folders/1v2Xj0Qjt3Te_SgVyySKEofRaZsSw_rjs?usp=sharing)  |  56.21   |  57.46  | 1.92  |  8.00  |  8.63 | 29.00  |  5.68  |
-| PDVC_light   | TSP | cfgs/anet_tsp_pdvcl.yml | [Google Drive](https://drive.google.com/drive/folders/1Ei8lnBs9Nn2SsFVd7WGe2iJERo46izv8?usp=sharing)  |  55.24   |  57.78  | 1.77  |  7.94  |  8.55 | 28.25  |  5.95  |
-| PDVC   | TSP  | cfgs/anet_tsp_pdvc.yml | [Google Drive](https://drive.google.com/drive/folders/1sX5wTk1hBgR_a5YUzpxFCrzwkZQXiIab?usp=sharing)  |  55.79   |  57.39  | 2.17  |  8.37  |  9.03 | 31.14  |  6.05  |
 
 
 Notes:
 * In the paper, we follow the most previous methods to use the [evaluation toolkit in ActivityNet Challenge 2018](https://github.com/ranjaykrishna/densevid_eval/tree/deba7d7e83012b218a4df888f6c971e21cfeea33). Note that the latest [evluation tookit](https://github.com/ranjaykrishna/densevid_eval/tree/9d4045aced3d827834a5d2da3c9f0692e3f33c1c) (METEOR2021) gives the same CIDEr/BLEU4 but a higher METEOR score. 
 * In the paper, we use an [old version of SODA_c implementation](https://github.com/fujiso/SODA/tree/22671b3570e088217139bcb1e4de7a3499c30294), while here we use an [updated version](https://github.com/fujiso/SODA/tree/9cb3e2c5a73c4e320a38c72f320b63bbef4aa798) for convenience.
 
-### Video paragraph captioning (with learnt proposals)
-|  Model | Features | config_path | BLEU4 | METEOR | CIDEr |
-|  ----  |  ----    |   ----  |  ----  |  ----  |   ----  |
-| PDVC   | C3D  | cfgs/anet_c3d_pdvc.yml | 9.67   |  14.74  | 16.43  |  
-| PDVC   | TSN  | cfgs/anet_tsn_pdvc.yml | 10.18   |  15.96  | 20.66  | 
-| PDVC   | TSP  | cfgs/anet_tsp_pdvc.yml | 10.46 | 16.42 | 20.91 |
-
-Notes:
-* Paragraph-level scores are evaluated on the ActivityNet Entity ae-val set.
-
 
 ## Citation
 If you find this repo helpful, please consider citing:
 ```
-@inproceedings{wang2021end,
-  title={End-to-End Dense Video Captioning with Parallel Decoding},
-  author={Wang, Teng and Zhang, Ruimao and Lu, Zhichao and Zheng, Feng and Cheng, Ran and Luo, Ping},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  pages={6847--6857},
-  year={2021}
+@article{shoman2024enhancing,
+  title={Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis},
+  author={Shoman, Maged and Wang, Dongdong and Aboah, Armstrong and Abdel-Aty, Mohamed},
+  journal={arXiv preprint arXiv:2404.08229},
+  year={2024}
 }
 ```
 ```
-@ARTICLE{wang2021echr,
-  author={Wang, Teng and Zheng, Huicheng and Yu, Mingjing and Tian, Qian and Hu, Haifeng},
-  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
-  title={Event-Centric Hierarchical Representation for Dense Video Captioning}, 
-  year={2021},
-  volume={31},
-  number={5},
-  pages={1890-1900},
-  doi={10.1109/TCSVT.2020.3014606}}
+@article{wang20248th,
+  title={The 8th AI City Challenge},
+  author={Wang, Shuo and Anastasiu, David C and Tang, Zheng and Chang, Ming-Ching and Yao, Yue and Zheng, Liang and Rahman, Mohammed Shaiqur and Arya, Meenakshi S and Sharma, Anuj and Chakraborty, Pranamesh and others},
+  journal={arXiv preprint arXiv:2404.09432},
+  year={2024}
+}
 ```
 
 ## Acknowledgement
