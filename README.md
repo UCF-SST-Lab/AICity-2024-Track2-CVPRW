@@ -4,39 +4,21 @@
 
 Official implementation for End-to-End Dense Video Captioning with Parallel Decoding (ICCV 2021) 
 
-[[paper]](https://arxiv.org/abs/2108.07781) [[valse论文速递(Chinese)]](https://www.bilibili.com/video/BV1Xq4y1B7p7) 
-
-**This repo supports:**
-* two video captioning tasks: dense video captioning and video paragraph captioning
-* two datasets: ActivityNet Captions and YouCook2
-* video features containing C3D, TSN, and TSP.
-* visualization of the generated captions of your own videos
 
 **Table of Contents:**
 * [Updates](#updates)
 * [Introduction](#introduction)
 * [Preparation](#preparation)
-* [Running PDVC on Your Own Videos](#running-pdvc-on-your-own-videos)
 * [Training and Validation](#training-and-validation)
   + [Download Video Features](#download-video-features)
   + [Dense Video Captioning](#dense-video-captioning)
   + [Video Paragraph Captioning](#video-paragraph-captioning)
 * [Performance](#performance)
   + [Dense video captioning](#dense-video-captioning)
-  + [Video paragraph captioning](#video-paragraph-captioning)
 * [Citation](#citation)
 * [Acknowledgement](#acknowledgement)
 
 
-
-## Updates
-- (2021.11.19) **add code for running PDVC on raw videos and visualize the generated captions (support Chinese and other non-English languages)**
-- (2021.11.19) add pretrained models with [TSP features](https://github.com/HumamAlwassel/TSP). It achieves 9.03 METEOR(2021) and 6.05 SODA_c, a very competitive results on ActivityNet Captions without self-critical sequence training.
-- (2021.08.29) add TSN pretrained models and support YouCook2
-
-## Introduction
-PDVC is a simple yet effective framework for end-to-end dense video captioning with parallel decoding (PDVC), by formulating the dense caption generation as a set prediction task. Without bells and whistles, extensive experiments on ActivityNet Captions and YouCook2 show that PDVC is capable of producing high-quality captioning results, surpassing the state-of-the-art methods when its localization accuracy is on par with them.
-![pdvc.jpg](pdvc.jpg)
 
 ## Preparation
 Environment: Linux,  GCC>=5.4, CUDA >= 9.2, Python>=3.7, PyTorch>=1.5.1
