@@ -101,9 +101,9 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type gt_pro
 ## Performance
 ### Dense video captioning (with learnt proposals)
 
-|  Model | Features | config_path |   Url   | Recall | Precision |    BLEU4   | METEOR2018 | METEOR2021 |  CIDEr | SODA_c |
-|  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |   ----  |  ----  |  ----  |  ----  | ---- |
-| PDVC_light   | C3D  | cfgs/anet_c3d_pdvcl.yml | [Google Drive](https://drive.google.com/drive/folders/1JKOJrm5QMAkso-VJnzGnksIVqNYt8BSI?usp=sharing)  |  55.30   |  58.42  | 1.55  |  7.13  |  7.66 | 24.80  |  5.23  |
+|  Model | Features | config_path |   Url   |   BLEU4   | METEOR2018 | METEOR2021 |  CIDEr | SODA_c |
+|  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |  ----  |  ----  | ---- |
+| PDVC_light   | CLIP  | cfgs/anet_c3d_pdvcl.yml |  
 
 
 Notes:
