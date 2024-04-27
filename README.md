@@ -54,10 +54,10 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type querie
 ## Performance
 ### Dense video captioning (with learnt proposals)
 
-|  Model | Features | config_path |   Url   |   BLEU4   | METEOR | ROUGE-L |  CIDEr |
-|  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |  ----  |  ---- |
-| PDVC_light   | CLIP  | cfgs/bdd_xxx_clip_pdvcl.yml |  
-| PDVC_light   | CLIP  | cfgs/train_wts_xxx_xxx_pdvcl_finetune.yml |  
+|  Model | Features | config_path |   Url   |   BLEU4   | METEOR | ROUGE-L |  CIDEr | S2 |
+|  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |  ----  |  ---- | ---- |
+| PDVC_light   | CLIP  | cfgs/bdd_xxx_clip_pdvcl.yml |  | 0.2102 |	0.4435 |	0.4705 |	0.8698 | 30.2821 |
+| PDVC_light   | CLIP  | cfgs/train_wts_xxx_xxx_pdvcl_finetune.yml |  | 0.2005 | 0.4115	| 0.4416 |	0.5573 | 27.7347|
 
 ## Citation
 If you find this repo helpful, please consider citing:
