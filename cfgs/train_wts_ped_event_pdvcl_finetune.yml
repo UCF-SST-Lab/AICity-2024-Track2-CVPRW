@@ -8,7 +8,6 @@ visual_feature_type: clip
 visual_feature_folder: 'data/wts_features'
 
 
-
 feature_dim: 768
 invalid_video_json: []
 train_proposal_file: data/generated_proposals/dbg_trainval_top100.json
