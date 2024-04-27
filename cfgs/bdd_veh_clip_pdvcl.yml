@@ -1,7 +1,7 @@
 id: bdd_veh_clip_pdvcl
 
 vocab_size: 2448
-
+dict_file: data/vocabulary/vocabulary_bdd_vehicle.json
 
 visual_feature_type: clip
 visual_feature_folder: 'data/bdd_features'
@@ -12,11 +12,11 @@ train_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 eval_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 
 
-gt_file_for_eval: ['data/captions/bdd_select_val_caption_pedestrian.json', 'data/captions/bdd_select_val_caption_pedestrian.json']
-gt_file_for_auc: 'data/captions/bdd_select_val_caption_pedestrian.json'
-gt_file_for_para_eval: ['data/captions/bdd_entities_select_val_caption_pedestrian.json', 'data/captions/bdd_entities_select_val_caption_pedestrian.json']
-train_caption_file: 'data/captions/bdd_trainval_caption_pedestrian.json'
-val_caption_file: 'data/captions/bdd_select_val_caption_pedestrian.json'
+gt_file_for_eval: ['data/captions/bdd_select_val_caption_vehicle.json', 'data/captions/bdd_select_val_caption_vehicle.json']
+gt_file_for_auc: 'data/captions/bdd_select_val_caption_vehicle.json'
+gt_file_for_para_eval: ['data/captions/bdd_entities_select_val_caption_vehicle.json', 'data/captions/bdd_entities_select_val_caption_vehicle.json']
+train_caption_file: 'data/captions/bdd_trainval_caption_vehicle.json'
+val_caption_file: 'data/captions/bdd_select_val_caption_vehicle.json'
 
 
 
