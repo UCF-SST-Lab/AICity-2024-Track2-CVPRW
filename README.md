@@ -57,7 +57,7 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type querie
 |  Model | Features | config_path |   Url   |   BLEU4   | METEOR | ROUGE-L |  CIDEr |
 |  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |  ----  |  ---- |
 | PDVC_light   | CLIP  | cfgs/bdd_xxx_clip_pdvcl.yml |  
-
+| PDVC_light   | CLIP  | cfgs/train_wts_xxx_xxx_pdvcl_finetune.yml |  
 
 ## Citation
 If you find this repo helpful, please consider citing:
