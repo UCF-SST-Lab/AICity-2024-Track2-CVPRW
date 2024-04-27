@@ -56,7 +56,7 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type querie
 
 |  Model | Features | config_path |   Url   |   BLEU4   | METEOR | ROUGE-L |  CIDEr |
 |  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |  ----  |  ---- |
-| PDVC_light   | CLIP  | cfgs/anet_c3d_pdvcl.yml |  
+| PDVC_light   | CLIP  | cfgs/bdd_xxx_clip_pdvcl.yml |  
 
 
 ## Citation
@@ -81,7 +81,7 @@ If you find this repo helpful, please consider citing:
 ## Acknowledgement
 
 The implementation of PDVC is modified based on [PDVC](https://github.com/ttengwang/PDVC). <br>
-The implementation of video Feature extraction is modified based on [FrozenBiLM](https://github.com/antoyang/FrozenBiLM). <br>
+The implementation of video feature extraction is modified based on [FrozenBiLM](https://github.com/antoyang/FrozenBiLM). <br>
 The implementation of Deformable Transformer is mainly based on [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR). <br>
 The implementation of the captioning head is based on [ImageCaptioning.pytorch](https://github.com/ruotianluo/ImageCaptioning.pytorch).
 We thanks the authors for their efforts.
