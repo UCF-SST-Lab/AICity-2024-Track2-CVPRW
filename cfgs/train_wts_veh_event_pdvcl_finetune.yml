@@ -14,13 +14,12 @@ train_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 eval_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 
 
+train_caption_file: 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_event.json'
+val_caption_file: 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_event.json'
 
-train_caption_file: '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_event.json'
-val_caption_file: '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_event.json'
-
-gt_file_for_eval: ['/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_event.json', '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_event.json']
-gt_file_for_auc: '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_event.json'
-gt_file_for_para_eval: ['/data/dwang/WTS_Data_AICityChallenge24/wts_entities_val_vehicle_view_caption_pedestrain_event.json', '/data/dwang/WTS_Data_AICityChallenge24/wts_entities_val_vehicle_view_caption_pedestrain_event.json']
+gt_file_for_eval: ['data/captions/wts_trainval_vehicle_view_caption_pedestrian_event.json', 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_event.json']
+gt_file_for_auc: 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_event.json'
+gt_file_for_para_eval: ['data/captions/wts_entities_val_vehicle_view_caption_pedestrain_event.json', 'data/captions/wts_entities_val_vehicle_view_caption_pedestrain_event.json']
 
 
 
