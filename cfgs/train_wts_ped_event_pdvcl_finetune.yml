@@ -67,3 +67,5 @@ max_eseq_length: 10
 
 num_layers: 2
 min_epoch_when_save: 1
+
+epoch: 30
