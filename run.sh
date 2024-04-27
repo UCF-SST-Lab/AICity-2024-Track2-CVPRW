@@ -4,6 +4,7 @@ python train.py --cfg_path cfgs/bdd_ped_clip_pdvcl.yml --gpu_id=0 --no_self_iou
 #python train.py --cfg_path cfgs/bdd_veh_clip_pdvcl.yml --gpu_id=1 --no_self_iou
 
 #################################### Finetuning with WTS
+####################### specify the model load path with saved checkpointpoint folder
 #python train.py --cfg_path cfgs/train_wts_veh_event_pdvcl_finetune.yml --gpu_id=2 --no_self_iou --load=save/bdd_veh_clip_pdvcl/ --load_vocab data/vocabulary/vocabulary_bdd_vehicle.json
 #python train.py --cfg_path cfgs/train_wts_veh_normal_pdvcl_finetune.yml --gpu_id=3 --no_self_iou --load=save/bdd_veh_clip_pdvcl/ --load_vocab data/vocabulary/vocabulary_bdd_vehicle.json
 
