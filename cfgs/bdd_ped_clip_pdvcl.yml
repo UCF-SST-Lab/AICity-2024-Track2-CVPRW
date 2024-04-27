@@ -1,7 +1,7 @@
 id: bdd_ped_clip_pdvcl
 
-vocab_size: 1980
-dict_file: data/vocabulary/vocabulary_bdd_wts.json
+vocab_size: 3499
+dict_file: data/vocabulary/vocabulary_bdd_pedestrian.json
 
 visual_feature_type: clip
 visual_feature_folder: 'data/bdd_features'
