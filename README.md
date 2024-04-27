@@ -47,7 +47,7 @@ python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID} --epoch=30
 # The script will evaluate the model for every epoch. The results and logs are saved in `./save`.
 
 # Evaluation
-eval_folder=anet_c3d_pdvc # specify the folder to be evaluated
+eval_folder=bdd_eval # specify the folder to be evaluated
 python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type queries --gpu_id ${GPU_ID}
 ```
 
@@ -80,6 +80,8 @@ If you find this repo helpful, please consider citing:
 
 ## Acknowledgement
 
+The implementation of PDVC is modified based on [PDVC](https://github.com/ttengwang/PDVC). 
+The implementation of video Feature extraction is modified based on [FrozenBiLM](https://github.com/antoyang/FrozenBiLM). 
 The implementation of Deformable Transformer is mainly based on [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR). 
 The implementation of the captioning head is based on [ImageCaptioning.pytorch](https://github.com/ruotianluo/ImageCaptioning.pytorch).
 We thanks the authors for their efforts.
