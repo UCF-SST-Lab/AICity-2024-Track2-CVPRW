@@ -1,17 +1,11 @@
 id: train_wts_ped_normal_pdvcl
 
-#vocab_size: 1627
-#dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_wts_pedestrian.json
-
-#vocab_size: 974
-#dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_wts_pedestrian_normal_wc1.json
-
-vocab_size: 3499 #678 #1980
-dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_bdd_pedestrian_wc1.json
+vocab_size: 3499 
+dict_file: data/vocabulary/vocabulary_bdd_pedestrian.json
 
 
 visual_feature_type: clip
-visual_feature_folder: '/data/dwang/WTS_Data_AICityChallenge24/wts_features'
+visual_feature_folder: 'data/wts_features'
 
 
 
@@ -21,41 +15,30 @@ train_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 eval_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 
 
+gt_file_for_eval: ['data/captions/wts_trainval_vehicle_view_caption_pedestrian_normal.json', 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_normal.json']
+gt_file_for_auc: 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_normal.json'
+gt_file_for_para_eval: ['data/captions/wts_entities_val_vehicle_view_caption_pedestrain_normal.json', 'data/captions/wts_entities_val_vehicle_view_caption_pedestrain_normal.json']
+val_caption_file: 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_normal.json'
 
 
-#gt_file_for_eval: ['/data/dwang/WTS_Data_AICityChallenge24/wts_val_vehicle_view_caption_pedestrain_normal.json', '/data/dwang/WTS_Data_AICityChallenge24/wts_val_vehicle_view_caption_pedestrain_normal.json']
-#gt_file_for_auc: '/data/dwang/WTS_Data_AICityChallenge24/wts_val_vehicle_view_caption_pedestrain_normal.json'
-#gt_file_for_para_eval: ['/data/dwang/WTS_Data_AICityChallenge24/wts_entities_val_vehicle_view_caption_pedestrain_normal.json', '/data/dwang/WTS_Data_AICityChallenge24/wts_entities_val_vehicle_view_caption_pedestrain_normal.json']
-#train_caption_file: '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_normal.json'
-#val_caption_file: '/data/dwang/WTS_Data_AICityChallenge24/wts_val_vehicle_view_caption_pedestrain_normal.json'
-
-gt_file_for_eval: ['/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_normal.json', '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_normal.json']
-gt_file_for_auc: '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_normal.json'
-gt_file_for_para_eval: ['/data/dwang/WTS_Data_AICityChallenge24/wts_entities_val_vehicle_view_caption_pedestrain_normal.json', '/data/dwang/WTS_Data_AICityChallenge24/wts_entities_val_vehicle_view_caption_pedestrain_normal.json']
-val_caption_file: '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_normal.json'
-
-
-train_caption_file: '/data/dwang/WTS_Data_AICityChallenge24/wts_trainval_vehicle_view_caption_pedestrian_normal.json'
-
-
-
+train_caption_file: 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_normal.json'
 
 train_proposal_type: gt
 gt_proposal_sample_num: 30
 sample_method: nearest
 
-batch_size: 4 # WTS 4 BDD 20
-lr: 0.0005 #0.00005 #0.001 WTS #0.0005 BDD
-learning_rate_decay_start: 3
-learning_rate_decay_every: 3
-learning_rate_decay_rate: 0.5 #0.5
-weight_decay: 0.0 ### 0.0001
+batch_size: 4 
+lr: 0.0005 
+learning_rate_decay_start: 10
+learning_rate_decay_every: 10
+learning_rate_decay_rate: 0.5 
+weight_decay: 0.0 
 save_all_checkpoint: 0
-save_checkpoint_every: 1
+save_checkpoint_every: 9
 
-num_queries: 10 #10
-dec_layers: 8 #2 #4 BDD
-enc_layers: 8 #2 #4 BDD 
+num_queries: 10 
+dec_layers: 3
+enc_layers: 3
 transformer_ff_dim: 512 
 transformer_dropout_prob: 0.1
 frame_embedding_num: 100
@@ -69,10 +52,6 @@ set_cost_caption: 0
 set_cost_giou: 4
 set_cost_bbox: 0
 set_cost_class: 2
-#cost_alpha: 0.5
-#cost_gamma: 1
-#focal_alpha: 0.5
-#focal_gamma: 1
 caption_loss_coef: 2
 giou_loss_coef: 4
 bbox_loss_coef: 0
@@ -84,9 +63,9 @@ lloss_focal_loss: 0
 lloss_gau_mask: 1
 
 batch_size_for_eval: 1
-max_caption_len: 200
-max_eseq_length: 15
+max_caption_len: 300
+max_eseq_length: 10
 
 
-num_layers: 4
-min_epoch_when_save: 0
+num_layers: 2
+min_epoch_when_save: 1
