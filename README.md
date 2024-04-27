@@ -52,7 +52,7 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type querie
 ```
 
 ## Performance
-### Dense video captioning (with learnt proposals)
+### Dense video captioning 
 
 |  Model | Features | config_path |   Url   |   BLEU4   | METEOR | ROUGE-L |  CIDEr | S2 |
 |  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |  ----  |  ---- | ---- |
