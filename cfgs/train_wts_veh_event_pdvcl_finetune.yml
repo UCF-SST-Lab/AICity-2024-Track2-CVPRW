@@ -1,13 +1,10 @@
 id: train_wts_veh_event_pdvcl
 
-#vocab_size: 1224
-#dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_wts_vehicle.json
-
 vocab_size: 2448
-dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_bdd_vehicle_wc1.json
+dict_file: data/vocabulary/vocabulary_bdd_vehicle.json
 
 visual_feature_type: clip
-visual_feature_folder: '/data/dwang/WTS_Data_AICityChallenge24/wts_features'
+visual_feature_folder: 'data/wts_features'
 
 
 
