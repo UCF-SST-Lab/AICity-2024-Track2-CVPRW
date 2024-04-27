@@ -24,12 +24,12 @@ train_proposal_type: gt
 gt_proposal_sample_num: 30
 sample_method: nearest
 
-batch_size: 20
-lr: 0.0005 
-learning_rate_decay_start: 8
-learning_rate_decay_every: 3
+batch_size: 4
+lr: 0.001
+learning_rate_decay_start: 10
+learning_rate_decay_every: 10
 learning_rate_decay_rate: 0.5
-weight_decay: 0.0
+weight_decay: 0.0001
 save_all_checkpoint: 0
 save_checkpoint_every: 10
 
@@ -68,5 +68,5 @@ max_caption_len: 300
 max_eseq_length: 10
 
 
-num_layers: 1
+num_layers: 2
 min_epoch_when_save: 1
