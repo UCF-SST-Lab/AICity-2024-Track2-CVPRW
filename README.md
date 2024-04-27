@@ -80,8 +80,8 @@ If you find this repo helpful, please consider citing:
 
 ## Acknowledgement
 
-The implementation of PDVC is modified based on [PDVC](https://github.com/ttengwang/PDVC). 
-The implementation of video Feature extraction is modified based on [FrozenBiLM](https://github.com/antoyang/FrozenBiLM). 
-The implementation of Deformable Transformer is mainly based on [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR). 
+The implementation of PDVC is modified based on [PDVC](https://github.com/ttengwang/PDVC). \\
+The implementation of video Feature extraction is modified based on [FrozenBiLM](https://github.com/antoyang/FrozenBiLM). \\
+The implementation of Deformable Transformer is mainly based on [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR). \\
 The implementation of the captioning head is based on [ImageCaptioning.pytorch](https://github.com/ruotianluo/ImageCaptioning.pytorch).
 We thanks the authors for their efforts.
