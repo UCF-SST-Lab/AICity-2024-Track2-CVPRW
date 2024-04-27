@@ -1,10 +1,10 @@
 id: bdd_ped_clip_pdvcl
 
 vocab_size: 1980
-dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_bdd_wts.json
+dict_file: data/vocabulary/vocabulary_bdd_wts.json
 
 visual_feature_type: clip
-visual_feature_folder: '/data/dwang/WTS_Data_AICityChallenge24/bdd_features'
+visual_feature_folder: 'data/bdd_features'
 
 feature_dim: 768
 invalid_video_json: []
