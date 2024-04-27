@@ -49,10 +49,6 @@ set_cost_caption: 0
 set_cost_giou: 4
 set_cost_bbox: 0
 set_cost_class: 2
-#cost_alpha: 0.5
-#cost_gamma: 1
-#focal_alpha: 0.5
-#focal_gamma: 1
 caption_loss_coef: 2
 giou_loss_coef: 4
 bbox_loss_coef: 0
