@@ -1,6 +1,6 @@
 # Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis
 
-This repository contains code to reproduce the results for our paper Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis (CVPRW 2024) 
+This repository contains code to reproduce the results for our paper Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis (CVPRW 2024 AICity Track2) 
 
 
 **Table of Contents:**
