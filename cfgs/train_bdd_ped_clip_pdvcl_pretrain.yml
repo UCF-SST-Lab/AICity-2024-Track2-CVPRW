@@ -31,11 +31,11 @@ learning_rate_decay_every: 10
 learning_rate_decay_rate: 0.5
 weight_decay: 0.0001
 save_all_checkpoint: 0
-save_checkpoint_every: 10
+save_checkpoint_every: 25
 
 num_queries: 10 
-dec_layers: 4 
-enc_layers: 4  
+dec_layers: 3 
+enc_layers: 3  
 transformer_ff_dim: 512 
 transformer_dropout_prob: 0.1
 frame_embedding_num: 100
@@ -60,11 +60,11 @@ lloss_focal_loss: 0
 lloss_gau_mask: 1
 
 batch_size_for_eval: 1
-max_caption_len: 300
+max_caption_len: 200
 max_eseq_length: 10
 
 
 num_layers: 2
 min_epoch_when_save: 1
 
-epoch: 51
+epoch: 101
