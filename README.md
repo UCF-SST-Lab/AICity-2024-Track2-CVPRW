@@ -55,6 +55,7 @@ python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type querie
 ```bash
 bash run.sh
 ```
+Notes: In bash file, --load=save/XXX has to be updated with the folder containing obtained models.
 
 ## Performance
 ### Dense video captioning 
