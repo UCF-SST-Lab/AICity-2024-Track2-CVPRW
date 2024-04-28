@@ -1,9 +1,9 @@
 # Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis
 
 This repository contains code to reproduce the results for our paper Enhancing Traffic Safety with Parallel Dense Video Captioning for End-to-End Event Analysis (CVPRW 2024 AICity Track2) 
-
+<div style="text-align: center;">
 <img src="https://github.com/UCF-SST-Lab/AICity-2024-Track2-CVPRW/blob/main/framework.png" width="650">
-
+</div>
 
 **Table of Contents:**
 * [Preparation](#preparation)
