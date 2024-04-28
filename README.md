@@ -44,7 +44,7 @@ The CLIP features extracted from BDD and WTS can be downloaded via [Google Drive
 
 
 ## Training Dense Video Captioning
-### Train and evaluate models with the commands
+### Train and evaluate models with command lines
 ```
 # Training
 config_path=cfgs/bdd_veh_clip_pdvcl.yml
@@ -56,7 +56,7 @@ eval_folder=bdd_eval # specify the folder to be evaluated
 python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type queries --gpu_id ${GPU_ID}
 ```
 
-### Train and evaluate models with bash file
+### Train and evaluate models with bash script
 ```bash
 bash run.sh
 ```
