@@ -68,17 +68,17 @@ def fill_proposals(formatted_proposals, scenario_index, proposal_data, reference
 
 #####################################################################################################################################
 
-file_path_bdd_veh = '/home/do868987/nlp_research/VidChapters/PDVC/save/bdd_veh_eval_pdvcl_v_2024-03-25-18-19-20/prediction/num375_epoch0.json' # vehicle-BDD
-file_path_bdd_ped = '/home/do868987/nlp_research/VidChapters/PDVC/save/bdd_ped_eval_pdvcl_v_2024-03-25-18-25-52/prediction/num375_epoch0.json' # pedestrian-BDD
-reference_path_bdd = '../WTS_DATASET_PUBLIC_TEST/eval_bdd_view.json'
+file_path_bdd_veh = 'save/bdd_veh_eval_pdvcl_v_2024-03-25-18-19-20/prediction/num375_epoch0.json' # vehicle-BDD
+file_path_bdd_ped = 'save/bdd_ped_eval_pdvcl_v_2024-03-25-18-25-52/prediction/num375_epoch0.json' # pedestrian-BDD
+reference_path_bdd = 'data/WTS_DATASET_PUBLIC_TEST/eval_bdd_view.json'
 
-file_path_wts_veh_event = '/home/do868987/nlp_research/VidChapters/PDVC/save/wts_veh_event_eval_pdvcl_v_2024-03-25-20-53-48/prediction/num48_epoch0.json' # vehicle-WTS-event
-file_path_wts_veh_event = '/home/do868987/nlp_research/VidChapters/PDVC/save/wts_ped_event_eval_pdvcl_v_2024-03-25-20-51-53/prediction/num48_epoch0.json' # pedestrian-WTS-event
-reference_path_event = '../WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
+file_path_wts_veh_event = 'save/wts_veh_event_eval_pdvcl_v_2024-03-25-20-53-48/prediction/num48_epoch0.json' # vehicle-WTS-event
+file_path_wts_veh_event = 'save/wts_ped_event_eval_pdvcl_v_2024-03-25-20-51-53/prediction/num48_epoch0.json' # pedestrian-WTS-event
+reference_path_event = 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
 
-file_path_wts_veh_normal = '/home/do868987/nlp_research/VidChapters/PDVC/save/wts_veh_normal_eval_pdvcl_v_2024-03-25-20-48-20/prediction/num30_epoch0.json' # vehicle-WTS-normal
-file_path_wts_ped_normal = '/home/do868987/nlp_research/VidChapters/PDVC/save/wts_ped_normal_eval_pdvcl_v_2024-03-25-20-50-14/prediction/num30_epoch0.json' # pedestrian-WTS-normal
-reference_path_normal = '../WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_normal.json'
+file_path_wts_veh_normal = 'save/wts_veh_normal_eval_pdvcl_v_2024-03-25-20-48-20/prediction/num30_epoch0.json' # vehicle-WTS-normal
+file_path_wts_ped_normal = 'save/wts_ped_normal_eval_pdvcl_v_2024-03-25-20-50-14/prediction/num30_epoch0.json' # pedestrian-WTS-normal
+reference_path_normal = 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_normal.json'
 
 
 file_path_list = [[file_path_bdd_veh, file_path_bdd_ped, reference_path_bdd],[file_path_wts_veh_event, file_path_wts_veh_event, reference_path_event], [file_path_wts_veh_normal, file_path_wts_ped_normal, reference_path_normal]]
