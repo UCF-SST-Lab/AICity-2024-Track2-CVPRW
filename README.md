@@ -20,7 +20,7 @@ This repository contains code to reproduce the results for our paper Enhancing T
 
 1. Clone the repo
 ```bash
-git clone --recursive https://github.com/UCF-SST-Lab/AICity-2024-Track2-CVPRW.git
+git clone --recursive https://github.com/UCF-SST-Lab/AICity-2024-Track2-CVPRW
 ```
 
 2. Create vitual environment by conda
