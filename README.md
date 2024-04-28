@@ -60,7 +60,7 @@ Notes: In bash file, --load=save/XXX has to be updated with the folder containin
 
 ## Submission File Preparation
 ```
-python reformat_evaluation.py
+python formatting_submission.py
 ```
 
 
