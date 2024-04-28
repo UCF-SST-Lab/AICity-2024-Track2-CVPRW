@@ -57,6 +57,13 @@ bash run.sh
 ```
 Notes: In bash file, --load=save/XXX has to be updated with the folder containing obtained models.
 
+
+## Submission File Preparation
+```
+python reformat_evaluation.py
+```
+
+
 ## Performance
 ### Dense video captioning 
 
