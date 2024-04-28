@@ -24,8 +24,8 @@ train_proposal_type: gt
 gt_proposal_sample_num: 30
 sample_method: nearest
 
-batch_size: 4
-lr: 0.001
+batch_size: 8
+lr: 0.0005
 learning_rate_decay_start: 10
 learning_rate_decay_every: 10
 learning_rate_decay_rate: 0.5
@@ -67,4 +67,4 @@ max_eseq_length: 10
 num_layers: 2
 min_epoch_when_save: 1
 
-epoch: 101
+epoch: 51
