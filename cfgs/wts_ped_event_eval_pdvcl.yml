@@ -13,13 +13,12 @@ train_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 eval_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 
 
+train_caption_file: 'data/captions/wts_trainval_vehicle_view_caption_pedestrian_event.json'
+val_caption_file: 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
+
 gt_file_for_eval: ['data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json', 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json']
 gt_file_for_auc: 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
 gt_file_for_para_eval: ['data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json', 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json']
-train_caption_file: 'data/anet_wts_all/captiondata/train_all_view_resnet.json'
-val_caption_file: 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
-
-
 
 
 train_proposal_type: gt
