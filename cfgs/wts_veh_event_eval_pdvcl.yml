@@ -1,10 +1,7 @@
 id: wts_veh_event_eval_pdvcl
 
-#vocab_size: 1039
-#dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_wts_vehicle_event_wc1.json
-
 vocab_size: 2448
-dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_bdd_vehicle_wc1.json
+dict_file: data/vocabulary/vocabulary_bdd_vehicle_wc1.json
 
 visual_feature_type: clip
 visual_feature_folder: 'data/WTS_DATASET_PUBLIC_TEST/wts_vehicle_view_test_feature'
