@@ -71,10 +71,10 @@ python formatting_submission.py
 
 ## Performance
 
-|  Model | Features | config_path |   BLEU4   | METEOR | ROUGE-L |  CIDEr | S2 |
-|  ----  |  ----    |   ----  |  ----  |  ----  |  ----  |  ---- | ---- |
-| PDVC_light   | CLIP  | cfgs/bdd_xxx_clip_pdvcl.yml | 0.2102 |	0.4435 |	0.4705 |	0.8698 | 30.2821 |
-| PDVC_light   | CLIP  | cfgs/train_wts_xxx_xxx_pdvcl_finetune.yml | 0.2005 | 0.4115	| 0.4416 |	0.5573 | 27.7347|
+|  Model | Features | Data |    BLEU4   | METEOR | ROUGE-L |  CIDEr | S2 |config_path |
+|  ----  |  ----    |  ---- |   ----  |  ----  |  ----  |  ----  |  ---- | ---- |
+| PDVC_light   | CLIP  | BDD |  0.2102 |	0.4435 |	0.4705 |	0.8698 | 30.2821 | cfgs/bdd_xxx_clip_pdvcl.yml |
+| PDVC_light   | CLIP  | WTS | 0.2005 | 0.4115	| 0.4416 |	0.5573 | 27.7347| cfgs/train_wts_xxx_xxx_pdvcl_finetune.yml |
 
 ## Citation
 If you find this repo helpful, please consider citing:
