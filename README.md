@@ -39,16 +39,21 @@ sh make.sh
 ```
 
 ## Training Dense Video Captioning
-
+### Train and evaluate models with the commands
 ```
 # Training
 config_path=cfgs/bdd_veh_clip_pdvcl.yml
 python train.py --cfg_path ${config_path} --gpu_id ${GPU_ID} --epoch=30
-# The script will evaluate the model for every epoch. The results and logs are saved in `./save`.
+# The script will evaluate the model given specified evaluation epochs. The results and logs are saved in `./save`.
 
 # Evaluation
 eval_folder=bdd_eval # specify the folder to be evaluated
 python eval.py --eval_folder ${eval_folder} --eval_transformer_input_type queries --gpu_id ${GPU_ID}
+```
+
+### Train and evaluate models with bash file
+```bash
+bash run.sh
 ```
 
 ## Performance
