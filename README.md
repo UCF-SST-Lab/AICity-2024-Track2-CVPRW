@@ -70,7 +70,6 @@ python formatting_submission.py
 
 
 ## Performance
-### Dense video captioning 
 
 |  Model | Features | config_path |   BLEU4   | METEOR | ROUGE-L |  CIDEr | S2 |
 |  ----  |  ----    |   ----  |  ----  |  ----  |  ----  |  ---- | ---- |
