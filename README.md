@@ -40,7 +40,7 @@ sh make.sh
 
 ## Feature Data
 
-The CLIP features extracted from BDD and WTS can be downloaded via [Google Drive](https://drive.google.com/drive/folders/1s1Q2I2JLNekhzMHE5z4km4qBD65gZ_Yo?usp=drive_link)
+The CLIP features (Training/Test) extracted from BDD and WTS can be downloaded via [Google Drive](https://drive.google.com/drive/folders/1s1Q2I2JLNekhzMHE5z4km4qBD65gZ_Yo?usp=drive_link)
 
 
 ## Training Dense Video Captioning
