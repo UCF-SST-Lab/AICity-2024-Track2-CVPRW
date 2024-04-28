@@ -38,6 +38,11 @@ cd pdvc/ops
 sh make.sh
 ```
 
+## Feature Data
+
+The CLIP features extracted from BDD and WTS can be downloaded via [Google Drive](https://drive.google.com/drive/folders/1s1Q2I2JLNekhzMHE5z4km4qBD65gZ_Yo?usp=drive_link)
+
+
 ## Training Dense Video Captioning
 ### Train and evaluate models with the commands
 ```
@@ -67,10 +72,10 @@ python formatting_submission.py
 ## Performance
 ### Dense video captioning 
 
-|  Model | Features | config_path |   Url   |   BLEU4   | METEOR | ROUGE-L |  CIDEr | S2 |
-|  ----  |  ----    |   ----  |  ----  |  ----   |  ----  |  ----  |  ---- | ---- |
-| PDVC_light   | CLIP  | cfgs/bdd_xxx_clip_pdvcl.yml |  | 0.2102 |	0.4435 |	0.4705 |	0.8698 | 30.2821 |
-| PDVC_light   | CLIP  | cfgs/train_wts_xxx_xxx_pdvcl_finetune.yml |  | 0.2005 | 0.4115	| 0.4416 |	0.5573 | 27.7347|
+|  Model | Features | config_path |   BLEU4   | METEOR | ROUGE-L |  CIDEr | S2 |
+|  ----  |  ----    |   ----  |  ----  |  ----  |  ----  |  ---- | ---- |
+| PDVC_light   | CLIP  | cfgs/bdd_xxx_clip_pdvcl.yml | 0.2102 |	0.4435 |	0.4705 |	0.8698 | 30.2821 |
+| PDVC_light   | CLIP  | cfgs/train_wts_xxx_xxx_pdvcl_finetune.yml | 0.2005 | 0.4115	| 0.4416 |	0.5573 | 27.7347|
 
 ## Citation
 If you find this repo helpful, please consider citing:
