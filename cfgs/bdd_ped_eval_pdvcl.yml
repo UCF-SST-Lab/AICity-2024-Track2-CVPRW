@@ -13,7 +13,7 @@ eval_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 
 gt_file_for_eval: ['data/WTS_DATASET_PUBLIC_TEST/eval_bdd_view.json', 'data/WTS_DATASET_PUBLIC_TEST/eval_bdd_view.json']
 gt_file_for_auc: 'data/WTS_DATASET_PUBLIC_TEST/eval_bdd_view.json'
-gt_file_for_para_eval: ['/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/eval_entities_bdd_view.json', 'data/WTS_DATASET_PUBLIC_TEST/eval_entities_bdd_view.json']
+gt_file_for_para_eval: ['data/WTS_DATASET_PUBLIC_TEST/eval_entities_bdd_view.json', 'data/WTS_DATASET_PUBLIC_TEST/eval_entities_bdd_view.json']
 train_caption_file: 'data/train_bdd_view.json'
 val_caption_file: 'data/WTS_DATASET_PUBLIC_TEST/eval_bdd_view.json'
 
