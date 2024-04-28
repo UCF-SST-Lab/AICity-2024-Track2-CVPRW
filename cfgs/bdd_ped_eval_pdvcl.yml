@@ -17,23 +17,22 @@ gt_file_for_para_eval: ['/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PU
 train_caption_file: 'data/train_bdd_view.json'
 val_caption_file: 'data/WTS_DATASET_PUBLIC_TEST/eval_bdd_view.json'
 
-
 train_proposal_type: gt
 gt_proposal_sample_num: 30
 sample_method: nearest
 
-batch_size: 40 
-lr: 0.005 
+batch_size: 8
+lr: 0.0005
 learning_rate_decay_start: 10
 learning_rate_decay_every: 10
-learning_rate_decay_rate: 0.75
-weight_decay: 0.0 
+learning_rate_decay_rate: 0.5
+weight_decay: 0.0001
 save_all_checkpoint: 0
-save_checkpoint_every: 10
+save_checkpoint_every: 25
 
 num_queries: 10 
-dec_layers: 2
-enc_layers: 2
+dec_layers: 3 
+enc_layers: 3  
 transformer_ff_dim: 512 
 transformer_dropout_prob: 0.1
 frame_embedding_num: 100
@@ -47,7 +46,6 @@ set_cost_caption: 0
 set_cost_giou: 4
 set_cost_bbox: 0
 set_cost_class: 2
-
 caption_loss_coef: 2
 giou_loss_coef: 4
 bbox_loss_coef: 0
@@ -60,7 +58,7 @@ lloss_gau_mask: 1
 
 batch_size_for_eval: 1
 max_caption_len: 200
-max_eseq_length: 15
+max_eseq_length: 10
 
 
 num_layers: 2
