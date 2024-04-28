@@ -34,8 +34,8 @@ save_all_checkpoint: 0
 save_checkpoint_every: 10
 
 num_queries: 10 
-dec_layers: 4 
-enc_layers: 4  
+dec_layers: 2 
+enc_layers: 2  
 transformer_ff_dim: 512 
 transformer_dropout_prob: 0.1
 frame_embedding_num: 100
@@ -65,10 +65,6 @@ max_eseq_length: 10
 
 
 num_layers: 2
-min_epoch_when_save: 1
-
-
-num_layers: 4
 min_epoch_when_save: 1
 
 epoch: 51
