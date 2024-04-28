@@ -1,7 +1,7 @@
 id: bdd_veh_eval_pdvcl
 
 vocab_size: 2448
-dict_file: data/vocabulary/vocabulary_bdd_vehicle_wc1.json
+dict_file: data/vocabulary/vocabulary_bdd_vehicle.json
 
 visual_feature_type: clip
 visual_feature_folder: data/WTS_DATASET_PUBLIC_TEST/bdd_test_feature'
