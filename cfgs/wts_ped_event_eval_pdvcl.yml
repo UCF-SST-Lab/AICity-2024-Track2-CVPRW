@@ -1,15 +1,10 @@
 id: wts_ped_event_eval_pdvcl
 
-#vocab_size: 1397
-#dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_wts_pedestrian_event_wc1.json
-
-vocab_size: 3499 #678 #1980
-dict_file: /home/do868987/nlp_research/vocabulary/vocabulary_bdd_pedestrian_wc1.json
+vocab_size: 3499
+dict_file: data/vocabulary/vocabulary_bdd_pedestrian_wc1.json
 
 visual_feature_type: clip
-#visual_feature_folder: '/data/dwang/WTS_Data_AICityChallenge24/bdd_features'
-visual_feature_folder: '/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/wts_vehicle_view_test_feature'
-
+visual_feature_folder: 'data/WTS_DATASET_PUBLIC_TEST/wts_vehicle_view_test_feature'
 
 
 feature_dim: 768
@@ -18,13 +13,11 @@ train_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 eval_proposal_file: data/generated_proposals/dbg_trainval_top100.json
 
 
-
-
-gt_file_for_eval: ['/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json', '/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json']
-gt_file_for_auc: '/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
-gt_file_for_para_eval: ['/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json', '/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json']
+gt_file_for_eval: ['data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json', 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json']
+gt_file_for_auc: 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
+gt_file_for_para_eval: ['data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json', 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json']
 train_caption_file: 'data/anet_wts_all/captiondata/train_all_view_resnet.json'
-val_caption_file: '/data/dwang/Submission_AICityChallenge24/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
+val_caption_file: 'data/WTS_DATASET_PUBLIC_TEST/eval_vehicle_view_event.json'
 
 
 
