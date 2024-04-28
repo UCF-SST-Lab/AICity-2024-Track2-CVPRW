@@ -1,7 +1,7 @@
 id: wts_ped_normal_eval_pdvcl
 
 vocab_size: 3499
-dict_file: data/vocabulary/vocabulary_bdd_pedestrian_wc1.json
+dict_file: data/vocabulary/vocabulary_bdd_pedestrian.json
 
 visual_feature_type: clip
 visual_feature_folder: 'data/WTS_DATASET_PUBLIC_TEST/wts_vehicle_view_test_feature'
